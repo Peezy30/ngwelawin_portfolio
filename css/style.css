@@ -1,0 +1,137 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background color */
+    color: white; /* Default text color for dark mode */
+}
+body.dark-mode #nav {
+    background-color: #2a2a2a !important;
+}
+
+body.dark-mode .navbar {
+    background-color: #5f4c4c; /* Navbar background color in dark mode */
+}
+
+body.dark-mode .bg-light {
+    background-color: #1c1c1c !important; /* Background color for sections in dark mode */
+}
+
+body.dark-mode .about.p {
+    color: black; /* Black text color for all paragraphs in dark mode */
+}
+
+body.dark-mode .border {
+    background-color: #2a2a2a; /* Background color for bordered elements */
+}
+
+/* Dark mode for sections like About Me, Projects, and others */
+body.dark-mode #about,
+body.dark-mode #projects,
+body.dark-mode #contact {
+    background-color: black !important; /* Dark background for sections */
+    color: white; /* Ensure text is white */
+}
+
+/* Dark mode for footer */
+body.dark-mode footer {
+    background-color: black !important; /* Dark background color for the footer */
+    color: whitesmoke !important; /* White text color for the footer */
+}
+
+/* Adjust background and text color for headers and paragraphs */
+body.dark-mode h2, 
+body.dark-mode p {
+    color: white;
+}
+body.dark-mode #project .p {
+    color: #121212 !important;
+}
+
+body.dark-mode #projects p {
+color: black !important; /* Ensure that <p> elements in the #projects section remain black */
+}
+
+body #projects .card {
+    background-color: whitesmoke;
+}
+
+body #contact .card {
+    background-color: whitesmoke;
+}
+
+body.dark-mode .card-text {
+    color: black !important;
+}
+
+body.dark-mode #about p {
+    color: black !important;
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+}
+
+#home {
+    scroll-margin-top: 100px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: labels and values */
+    gap: 10px 20px; /* Adjust row and column gaps */
+    align-items: start; /* Align text at the top */
+}
+
+.info-grid div {
+    padding: 5px 0;
+}
+/* Set a fixed height for the navbar */
+#nav {
+height: 60px; /* Choose a fixed height that works for you */
+overflow: hidden; /* Prevent content overflow */
+}
+
+/* Ensure navbar-brand and nav-items take up full height */
+.navbar-brand,
+.nav-link,
+#darkModeToggle {
+height: 100%;
+display: flex;
+align-items: center; /* Center items vertically */
+}
+
+/* Adjust padding/margins if needed to fit better */
+.navbar-nav .nav-link {
+padding: 0.5rem 1rem; /* Control padding to fit items inside the navbar */
+}
+
+/* Ensure the dark mode toggle stays vertically aligned */
+#darkModeToggle {
+margin-left: auto; /* Align the button to the right */
+}
+
+/* For small screens, ensure the navbar height stays fixed */
+@media (max-width: 767.98px) {
+#nav {
+height: 60px; /* Same fixed height for mobile */
+}
+
+.navbar-nav {
+margin-top: 0;
+}
+.nav-text {
+display: none; /* Hides the text */
+}
+
+.navbar-nav .nav-link {
+justify-content: center; /* Center align icons if needed */
+}
+
+/* Optional: Adjust the icon size for better visibility */
+.navbar-nav .nav-link i {
+font-size: 1.5rem; /* Increase icon size */
+}
+.responsive-img {
+height: auto;
+width: 100%;
+}
+}        
