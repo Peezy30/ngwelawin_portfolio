@@ -10,7 +10,9 @@ body.dark-mode #nav {
 body.dark-mode .navbar {
     background-color: #5f4c4c; /* Navbar background color in dark mode */
 }
-
+body.dark-mode #mainpic {
+    border: solid 0.5px #2a2a2a !important; 
+}
 body.dark-mode .bg-light {
     background-color: #1c1c1c !important; /* Background color for sections in dark mode */
 }
